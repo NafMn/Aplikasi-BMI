@@ -3,3 +3,38 @@
 /* untuk header ya kak */
 
 
+
+
+/* gambar header */
+
+
+.teks h2{
+    color: #4361EE;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 105px; /* 116.667% */
+   
+}
+
+#teks1{
+    color: #000;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 105px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.teks-deks p{
+    padding-top: 25px;
+    font-size: 25px;
+}
+
+.gambarheader{
+    width: 885px;
+    height: 590px;
+    flex-shrink: 0;
+    background: url(../images/female-doctor-fococlipping-removed-1.png);
+}
