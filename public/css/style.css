@@ -1,0 +1,50 @@
+/* Aku Suka Dollar */
+
+/* untuk header ya kak */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-btn a {
+    background-color: #fff;
+    color: #333;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.login-btn a:hover {
+    background-color: #ddd;
+}
+
