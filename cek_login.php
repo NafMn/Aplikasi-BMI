@@ -15,12 +15,12 @@
         
         if (password_verify($password, $user['password'])) { // Verifikasi password yg dihash
             // Jika password cocok, set session
-            
-            $_SESSION['username'] = $username;
+
+            $_SESSION['username'] = $identifier;
             $_SESSION['status'] = "Login";
             header("location: Profile/");
         } else {
-            header("location: Login.php?pesan=gagal");
+            header("location: Login.php?pesan=password_salah");
         }
     } else {
         header("location: Login.php?pesan=gagal");

@@ -3,6 +3,7 @@
 
      // Cek apakah pengguna sudah login
      $loggedIn = isset($_SESSION['username']);
+     $name = $_SESSION['username']
 ?>
 
 <!DOCTYPE html>
@@ -55,7 +56,7 @@
                     <!-- Jika sudah login, tampilkan icon profile -->
                     <li class="nav-item text-center">
                         <!-- Gantikan dengan ikon profile yang sesuai -->
-                        <a href="./Profile" class="nav-link">Hai,<?php echo $loggedIn ?></a>
+                        <a href="./Profile" class="nav-link">Hai,<?php echo $name ?> </a>
                     </li>
                 <?php else : ?>
                     <!-- Jika belum login, tampilkan tombol login -->

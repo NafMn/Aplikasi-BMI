@@ -1,7 +1,0 @@
-[28-Jul-2023 15:24:10 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/cekr2744/public_html/web/includes/header.php on line 2
-[28-Jul-2023 15:24:11 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/cekr2744/public_html/web/includes/header.php on line 2
-[28-Jul-2023 15:24:12 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/cekr2744/public_html/web/includes/header.php on line 2
-[28-Jul-2023 15:24:47 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/cekr2744/public_html/web/includes/header.php on line 2
-[28-Jul-2023 15:26:44 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/cekr2744/public_html/web/includes/header.php on line 2
-[28-Jul-2023 15:26:48 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/cekr2744/public_html/web/includes/header.php on line 2
-[28-Jul-2023 15:28:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cekr2744/public_html/config/database.php:15) in /home/cekr2744/public_html/Daftar.php on line 19

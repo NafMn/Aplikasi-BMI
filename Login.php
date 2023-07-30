@@ -28,6 +28,20 @@ if (isset($_GET['pesan'])) {
                 });
             });
         </script>';
+    } elseif ($_GET['pesan'] == "password_salah") {
+        echo '<script>
+            document.addEventListener("DOMContentLoaded", function() {
+                Swal.fire({
+                    icon: "warning",
+                    title: "Password Salah",
+                    text: "Password yang anda masukkan salah",
+                    confirmButtonText: "OK",
+                    customClass: {
+                        confirmButton: "btn btn-primary"
+                    }
+                });
+            });
+        </script>';
     } elseif ($_GET['pesan'] == "Belum_login") {
         echo '<script>
             document.addEventListener("DOMContentLoaded", function() {
