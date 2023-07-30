@@ -3,7 +3,6 @@
 
      // Cek apakah pengguna sudah login
      $loggedIn = isset($_SESSION['username']);
-     $username = $_SESSION['username'];
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +21,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
     <!-- SweetAlert2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./web/assets/css/style.css" />
     <link rel="icon" href="./web/assets/images/logo.svg" />
@@ -54,7 +55,7 @@
                     <!-- Jika sudah login, tampilkan icon profile -->
                     <li class="nav-item text-center">
                         <!-- Gantikan dengan ikon profile yang sesuai -->
-                        <a href="./Profile" class="nav-link">Hai,<?php echo $username ?></a>
+                        <a href="./Profile" class="nav-link">Hai,<?php echo $loggedIn ?></a>
                     </li>
                 <?php else : ?>
                     <!-- Jika belum login, tampilkan tombol login -->
