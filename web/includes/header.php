@@ -1,9 +1,14 @@
 <?php
     session_start();
 
-     // Cek apakah pengguna sudah login
-     $loggedIn = isset($_SESSION['username']);
-     $name = $_SESSION['username']
+    // Cek apakah pengguna sudah login
+    $loggedIn = isset($_SESSION['status']) && $_SESSION['status'] === "Login";
+    $name = ""; // Inisialisasi variabel $name
+
+    if ($loggedIn) {
+        // Jika sudah login, ambil nama pengguna dari $_SESSION['username']
+        $name = $_SESSION['username'];
+    }
 ?>
 
 <!DOCTYPE html>
