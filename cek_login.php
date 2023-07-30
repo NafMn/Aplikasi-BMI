@@ -2,18 +2,20 @@
     session_start();
     include "config/database.php";
 
-    $username = $_POST['username'];
+    $identifier = $_POST['identitas']; 
     $password = $_POST['password'];
 
-    $query = "SELECT * FROM user WHERE username = '$username'";
+
+    $query = "SELECT * FROM user WHERE username = '$identifier' OR email = '$identifier'";
     $result = mysqli_query($connect, $query);
 
     if ($result && mysqli_num_rows($result) > 0) {
         $user = mysqli_fetch_assoc($result);
     
-        // Verifikasi password yg dihash
-        if (password_verify($password, $user['password'])) {
+        
+        if (password_verify($password, $user['password'])) { // Verifikasi password yg dihash
             // Jika password cocok, set session
+            
             $_SESSION['username'] = $username;
             $_SESSION['status'] = "Login";
             header("location: Profile/");

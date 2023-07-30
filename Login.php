@@ -72,7 +72,7 @@ if (isset($_GET['pesan'])) {
                                     <form method="POST" action="cek_login.php" class="d-flex align-items-start flex-column">
                                         <div class="w-100">
                                             <div class="form-group">
-                                                <input name="username" id="username" type="teks" class="form-control form-control-user  my-3 py-3" placeholder="Email atau Username" required>
+                                                <input name="identitas" id="identitas" type="teks" class="form-control form-control-user  my-3 py-3" placeholder="Email atau Username" required>
                                             </div>
 
                                             <div class="form-group">
