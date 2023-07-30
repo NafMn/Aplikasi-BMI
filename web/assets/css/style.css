@@ -1,0 +1,106 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins'
+}
+
+li {
+    font-size: medium;
+}
+
+p {
+    text-align: justify;
+}
+
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #4361EE;
+    ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.25s;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+
+.teks h2{
+    color: #4361EE;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105px; /* 116.667% */
+   
+}
+
+#span-teks{
+    color: #000;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105px;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+.teks-deks p{
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.card {
+    background: linear-gradient(214.57deg, #DBDCE0 -4.98%, #FFFFFF 102.15%);
+}
+
+#gambarheader {
+    width: 700px; 
+    height: 537;
+}
+
+#footer {
+    background-color: #4361EE;
+}
+
+@media (max-width: 992px) {
+    .nav-link::after {
+        content: '';
+        height: 2px;
+        width: 100%;
+        padding: auto;
+    }
+
+    .teks h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #span-teks {
+        font-size: 50px;
+    }
+
+    #gambarheader {
+        width: 500px; 
+        height: 437px;
+    }
+}
+
+@media (max-width: 500px) {
+    #gambarheader img {
+        width: 200px; 
+        height: 337px;
+        display: flex;
+        justify-content: center;
+    }
+}

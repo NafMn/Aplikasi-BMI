@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Tidak Ditemukan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://pngfre.com/wp-content/uploads/anime-png-image-pngfre-11-229x300.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: right bottom;
+        }
+
+        .container {
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #ff5c5c;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        #audio-player {
+            display: block;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        @keyframes fadeInOut {
+        0%, 100% {
+            opacity: 0.5;
+        }
+        50% {
+            opacity: 1;
+        }
+        }
+
+    /* Animasi untuk paragraf */
+    @keyframes slideIn {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+        }
+
+        /* Efek hover untuk tombol kembali ke halaman utama */
+        a:hover {
+            color: #ff5c5c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <p>Halaman yang Anda cari tidak ditemukan.</p>
+        <audio id="audio-player" controls autoplay>
+            <source src="assets/audio404.mp3" type="audio/mpeg">
+            Maaf, browser Anda tidak mendukung pemutar audio.
+        </audio>
+        <p>Klik tombol di bawah untuk kembali ke halaman utama.</p>
+        <a href="/">Kembali ke Halaman Utama</a>
+    </div>
+    <script>
+        // Fungsi untuk animasi elemen pada halaman 404
+        function animateElement(element, animationClass) {
+            element.classList.add(animationClass);
+
+            // Hapus kelas animasi setelah animasi selesai
+            element.addEventListener('animationend', function () {
+                element.classList.remove(animationClass);
+            });
+        }
+
+        // Animasi judul dan paragraf pada saat halaman dimuat
+        const title = document.querySelector('h1');
+        const paragraph = document.querySelector('p');
+        animateElement(title, 'animate-title');
+        animateElement(paragraph, 'animate-paragraph');
+
+        // Fungsi untuk mengubah warna latar belakang secara acak
+        function randomizeBackgroundColor() {
+            const colors = ['#ffcccc', '#ccffcc', '#ccccff', '#ffffcc', '#ffccff'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+
+        // Ganti warna latar belakang setiap 3 detik
+        setInterval(randomizeBackgroundColor, 3000);
+    </script>
+</body>
+
+</html>
